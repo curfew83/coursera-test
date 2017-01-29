@@ -1,0 +1,9 @@
+<ol>
+    <li><a ui-sref="home">Home</a></li>
+    <li><a ui-sref="categories">Categories</a></li>
+    <li class="active">{{ itemCtrl.category }}</li>
+</ol>
+
+<h4>Menu items under "{{ itemCtrl.category }}":</h4>
+
+<items items="itemCtrl.items"></items>
