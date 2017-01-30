@@ -8,7 +8,6 @@ angular.module('common')
 InfoService.$inject = ['$http', 'ApiPath'];
 function InfoService($http, ApiPath) {
   var service = this;
-  service.info={};
   service.getInfo = function () {
     return service.info;
   };

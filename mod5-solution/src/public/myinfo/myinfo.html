@@ -1,4 +1,8 @@
-<div class="container">
+<div ng-if="!myinfoCtrl.hasreg">
+		Not Signed Up Yet! <a ui-sref="public.signup">Sign up now! </a>
+</div>
+
+<div ng-if="myinfoCtrl.hasreg">
    Firstname: {{myinfoCtrl.infos.firstname}} <br>
    Lastname: {{myinfoCtrl.infos.lastname}} <br>
    Email: {{myinfoCtrl.infos.email}} <br>
