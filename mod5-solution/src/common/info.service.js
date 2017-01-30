@@ -20,12 +20,9 @@ function InfoService($http, ApiPath) {
 
   service.check = function(shortname) {
      return $http.get(ApiPath + '/menu_items/'+ shortname + '.json').then(function (response) {
-      console.log("response:",response);
-      return false;
-    }).catch(function (error) {
-          console.log("Something went terribly wrong.");
-          return true;
-        });
+      console.log("response:",response.status);
+      return response.status;
+    });
   }
 
 }
