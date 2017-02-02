@@ -22,7 +22,15 @@ function InfoService($http, ApiPath) {
       console.log("response:",response.status);
       return response.status;
     });
-  }
+  };
+
+  service.setMenuItem = function(menuItem) {
+      service.menuItem=menuItem;
+  };
+
+  service.getMenuItem = function() {
+      return service.menuItem;
+  };
 
 }
 

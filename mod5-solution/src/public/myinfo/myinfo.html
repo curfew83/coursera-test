@@ -8,6 +8,14 @@
    Email: {{myinfoCtrl.infos.email}} <br>
    Phone: {{myinfoCtrl.infos.phone}} <br>
    Favourate Menu: {{myinfoCtrl.infos.favourate}} <br>
-
+   <div>
+      <div>
+        <img class="img" width="250" height="150" ng-src="{{myinfoCtrl.basePath}}/images/{{myinfoCtrl.menuItem.short_name}}.jpg" alt="{{myinfoCtrl.menuItem.name}}">
+      </div>
+    </div>
+    <div class="menu-item-description">
+      <h3 class="menu-item-title">{{myinfoCtrl.menuItem.name}}</h3>
+      <p class="menu-item-details">{{myinfoCtrl.menuItem.description}}</p>
+    </div>
 
 </div>

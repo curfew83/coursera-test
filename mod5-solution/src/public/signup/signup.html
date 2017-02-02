@@ -56,8 +56,8 @@
           ng-disabled="regForm.$invalid"
           ng-click="signupCtrl.submit()">Submit</button>
 
-          <div style="margin-top: 10px;">
-            Form valid? {{ regForm.$valid }}
+          <div ng-if="signupCtrl.success">
+          	 Your information has been saved.
           </div>
       </form>
     </fieldset>

@@ -49,6 +49,9 @@ function routeConfig ($stateProvider) {
       resolve: {
         infos: ['InfoService', function (InfoService) {
           return InfoService.getInfo();
+        }],
+        menuItem: ['InfoService',function(InfoService) {
+          return InfoService.getMenuItem();
         }]
       }
     })

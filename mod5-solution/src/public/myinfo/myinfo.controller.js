@@ -4,8 +4,8 @@
 angular.module('public')
 .controller('MyinfoController', MyinfoController);
 
-MyinfoController.$inject = ['infos'];
-function MyinfoController(infos) {
+MyinfoController.$inject = ['infos','menuItem'];
+function MyinfoController(infos,menuItem) {
   var $ctrl = this;
   $ctrl.hasreg=false;
   console.log("info",infos);
@@ -15,6 +15,8 @@ function MyinfoController(infos) {
   }
   console.log("info2",infos);
   $ctrl.infos=infos;
+  $ctrl.menuItem=menuItem;
+  $ctrl.basePath='https://ychaikin-coursera5.herokuapp.com';
 }
 
 
